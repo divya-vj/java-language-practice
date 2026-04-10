@@ -80,7 +80,7 @@ public class Day1 {
         System.out.println("Cost per item: " + costPerItem + currency);
         System.out.println("Total cost = " + totalCost + currency);
 
-        var myNum = 5;         // int
+        //var myNum = 5;         // int
         var myDouble = 9.98;   // double
         var myChar = 'D';      // char
         var myBoolean = true;  // boolean
@@ -89,13 +89,13 @@ public class Day1 {
         //Type Casting
 
         int myInt = 9;
-        double myDouble = myInt; // Automatic casting: int to double
+        //double myDouble = myInt; // Automatic casting: int to double
 
         System.out.println(myInt);    // Outputs 9
         System.out.println(myDouble); // Outputs 9.0
 
-        double myDouble = 9.78d;
-        int myInt = (int) myDouble; // Manual casting: double to int
+        //double myDouble = 9.78d;
+        //int myInt = (int) myDouble; // Manual casting: double to int
 
         System.out.println(myDouble); // Outputs 9.78
         System.out.println(myInt);    // Outputs 9
@@ -105,6 +105,51 @@ public class Day1 {
         int sum1 = 100 + 50;        // 150 (100 + 50)
         int sum2 = sum1 + 250;      // 400 (150 + 250)
         int sum3 = sum2 + sum2;     // 800 (400 + 400)
+
+        //int x = 10;
+        //int y = 3;
+
+        System.out.println(x + y); // 13
+        System.out.println(x - y); // 7
+        System.out.println(x * y); // 30
+        System.out.println(x / y); // 3
+        System.out.println(x % y); // 1
+
+        int z = 5;
+        ++z;
+        System.out.println(z); // 6
+        --z;
+        System.out.println(z); // 5
+
+        
+        int a = 10;
+        int b = 3;
+        System.out.println(a / b);   // Integer division, result is 3
+
+        double c = 10.0d;
+        double d = 3.0d;
+        System.out.println(c / d);   // Decimal division, result is 3.333...
+
+        //int x = 5;
+        //int y = 3;
+        System.out.println(x > y);
+
+        int age = 18;
+
+        System.out.println(age >= 18); // true, old enough to vote
+        System.out.println(age < 18);  // false
+
+        boolean isLoggedIn = true;
+        boolean isAdmin = false;
+
+        System.out.println("Regular user: " + (isLoggedIn && !isAdmin));
+        System.out.println("Has access: " + (isLoggedIn || isAdmin));
+        System.out.println("Not logged in: " + (!isLoggedIn));
+
+
+
+
+
 
 
 
