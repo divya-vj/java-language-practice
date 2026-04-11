@@ -28,6 +28,36 @@ public class strings {
         String txt = "   Hello World   ";
         System.out.println("Before: [" + txt + "]");
         System.out.println("After:  [" + txt.trim() + "]");
+
+        String firstName = "John";
+        String lastName = "Doe";
+        System.out.println(firstName + " " + lastName);
+
+        String name = "John";
+        int age = 25;
+        System.out.println("My name is " + name + " and I am " + age + " years old.");
+
+       // String firstName = "John ";
+        //String lastName = "Doe";
+        System.out.println(firstName.concat(lastName));
+
+        int p=10;
+        int q=20;
+        int z=p+q;//30
+
+        String x = "10";
+        String y = "20";
+        String z = x + y;  // z will be 1020 (a String)
+
+        String x = "10";
+        int y = 20;
+        String z = x + y;  // z will be 1020 (a String)
+
+        String txt = "We are the so-called \"Vikings\" from the north.";
+
+        String txt = "It\'s alright.";
+
+        String txt = "The character \\ is called backslash.";
     }
     
 }
