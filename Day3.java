@@ -56,6 +56,34 @@ public class Day3 {
 
         System.out.println("Happy New Year!!");
 
+        //do while loop
+
+        int i = 0;
+        do {
+        System.out.println(i);
+        i++;
+        }
+        while (i < 5);
+
+        
+        int i = 10;
+
+        do {
+        System.out.println("i is " + i);
+        i++;
+        } while (i < 5);
+
+        int dice = 1;
+
+        while (dice <= 6) {
+        if (dice < 6) {
+            System.out.println("No Yatzy.");
+        } else {
+            System.out.println("Yatzy!");
+        }
+        dice = dice + 1;
+        }
+
 
 
 
