@@ -107,12 +107,30 @@ public class Day3 {
         } 
 
         for (int i = 1; i <= 3; i++) {
-            
+
             for (int j = 1; j <= 3; j++) {
             System.out.print(i * j + " ");
         }
         System.out.println();
         }
+
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (String car : cars) {
+        System.out.println(car);
+        }
+
+        int[] numbers = {10, 20, 30, 40};
+
+        for (int num : numbers) {
+        System.out.println(num);
+        }
+
+        
+
+
+
+        
+
 
 
 
