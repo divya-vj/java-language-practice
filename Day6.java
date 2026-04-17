@@ -55,3 +55,94 @@ class TreeNode {
         this.right = null;
     }
 }
+
+import java.util.ArrayList;
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(10);          // [10]
+list.add(20);          // [10, 20]
+list.add(1, 15);       // [10, 15, 20] — insert at index 1
+list.get(0);           // 10
+list.remove(0);        // removes index 0 → [15, 20]
+list.size();           // 2
+list.contains(15);     // true
+Collections.sort(list); // sorts in ascending order
+
+// Loop through
+for (int x : list) System.out.println(x);
+
+import java.util.HashMap;
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("apple", 3);
+map.put("banana", 5);
+map.get("apple");          // 3
+map.containsKey("mango");  // false
+map.getOrDefault("mango", 0);  // 0 — safe get
+map.remove("banana");
+
+// Loop
+for (String key : map.keySet()) {
+    System.out.println(key + " → " + map.get(key));
+}
+
+// Classic DSA use — count frequency
+String s = "hello";
+HashMap<Character, Integer> freq = new HashMap<>();
+for (char c : s.toCharArray()) {
+    freq.put(c, freq.getOrDefault(c, 0) + 1);
+}
+// freq: {h=1, e=1, l=2, o=1}
+
+import java.util.HashSet;
+
+HashSet<Integer> set = new HashSet<>();
+set.add(1); set.add(2); set.add(1);  // {1, 2} — no duplicate
+set.contains(2);   // true
+set.remove(1);     // {2}
+
+// DSA use — check if duplicate exists in array
+int[] arr = {1, 2, 3, 2};
+HashSet<Integer> seen = new HashSet<>();
+for (int x : arr) {
+    if (!seen.add(x)) System.out.println("Duplicate: " + x);
+}
+
+import java.util.Stack;
+
+Stack<Integer> stack = new Stack<>();
+stack.push(1);     // [1]
+stack.push(2);     // [1, 2]
+stack.push(3);     // [1, 2, 3]
+stack.peek();      // 3 — look at top without removing
+stack.pop();       // removes & returns 3 → [1, 2]
+stack.isEmpty();   // false
+
+// DSA use: balanced parentheses check
+String s = "({[]})";
+Stack<Character> st = new Stack<>();
+for (char c : s.toCharArray()) {
+    if (c=='(' || c=='{' || c=='[') st.push(c);
+    else st.pop();  // simplified
+}
+System.out.println(st.isEmpty() ? "Valid" : "Invalid");
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+Queue<Integer> q = new LinkedList<>();
+q.offer(1);    // add to end: [1]
+q.offer(2);    // [1, 2]
+q.offer(3);    // [1, 2, 3]
+q.peek();      // 1 — front element
+q.poll();      // removes & returns 1 → [2, 3]
+
+import java.util.PriorityQueue;
+
+PriorityQueue<Integer> pq = new PriorityQueue<>();
+pq.offer(5); pq.offer(1); pq.offer(3);
+pq.peek();   // 1 — smallest always at top
+pq.poll();   // removes 1 → next peek = 3
+
+// Max-heap (largest at top)
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder());
