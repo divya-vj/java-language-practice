@@ -146,3 +146,22 @@ pq.poll();   // removes 1 → next peek = 3
 
 // Max-heap (largest at top)
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder());
+
+// Autoboxing — primitive automatically converted to wrapper
+ArrayList<Integer> list = new ArrayList<>();
+list.add(5);   // 5 is int, Java auto-converts to Integer(5)
+
+// Unboxing — wrapper automatically converted to primitive
+int x = list.get(0);   // Integer → int, automatically
+
+// You almost never need to do this manually:
+Integer a = Integer.valueOf(10);  // manual boxing (rarely needed)
+int b = a.intValue();             // manual unboxing (rarely needed)
+
+Integer.parseInt("123");          // String → int: 123
+Integer.toString(45);             // int → String: "45"
+Integer.MAX_VALUE;                // 2147483647
+Integer.MIN_VALUE;                // -2147483648
+Integer.toBinaryString(10);       // "1010"
+Integer.max(3, 7);                // 7
+Integer.min(3, 7);                // 3
