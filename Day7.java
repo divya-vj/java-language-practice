@@ -9,3 +9,15 @@ public try {
 } Day7 {
     
 }
+try {
+    int[] arr = new int[5];
+    arr[10] = 1;               // ArrayIndexOutOfBoundsException
+    String s = null;
+    s.length();                // NullPointerException
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Array index out of range!");
+} catch (NullPointerException e) {
+    System.out.println("Null reference!");
+} catch (Exception e) {       // catches any other exception
+    System.out.println("Some error: " + e.getMessage());
+}
