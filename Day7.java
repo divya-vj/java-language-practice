@@ -21,3 +21,15 @@ try {
 } catch (Exception e) {       // catches any other exception
     System.out.println("Some error: " + e.getMessage());
 }
+
+static int divide(int a, int b) throws ArithmeticException {
+    if (b == 0) throw new ArithmeticException("Divide by zero");
+    return a / b;
+}
+
+// When calling:
+try {
+    System.out.println(divide(10, 0));
+} catch (ArithmeticException e) {
+    System.out.println(e.getMessage());
+}
