@@ -39,6 +39,8 @@ public class Arrays {
         for (int array[i = 0; i<n;i++){
             array[i] =sc.nextInt();//take each element
         }
+
+        
         }
     }
     
