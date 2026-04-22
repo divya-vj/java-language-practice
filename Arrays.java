@@ -16,6 +16,16 @@ public class Arrays {
         System.out.print("Non-Primitive Array -> ");
         for (int i = 0; i < names.length; i++)
             System.out.print(names[i] + " ");
+
+
+        int[] array={10,20,30};
+        //index starts @ 0 always
+        array[0] = 10
+        array[2]=30
+
+        //length
+        int n=array.length;
+        
     }
     
 }
