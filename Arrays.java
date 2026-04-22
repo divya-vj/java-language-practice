@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 public class Arrays {
     public static void main(String[] args) {
         // Primitive array
@@ -25,7 +28,18 @@ public class Arrays {
 
         //length
         int n=array.length;
-        
+
+        //take array input 
+
+        import java.util.Scanner;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();//size of arr
+        int[] array=new int[n];
+
+        for (int array[i = 0; i<n;i++){
+            array[i] =sc.nextInt();//take each element
+        }
+        }
     }
     
 }
