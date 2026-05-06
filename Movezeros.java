@@ -25,7 +25,7 @@ public class MaxMin{
     }
 }*/
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class ReverseArray{
     public static void main(String[] args) {
@@ -53,6 +53,35 @@ public class ReverseArray{
 
         }
 
+    }
+}*/
+
+import java.util.Scanner;
+
+public class Movezeros{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+
+            arr[i]=sc.nextInt();
+        }
+        int j=0;
+
+        for(int i=0;i<n;i++){
+            if(arr[i]!=0){
+                arr[j] = arr[i];
+                j++;
+            }
+        }
+        while(j<n){
+            arr[j]=0;
+            j++;
+        }
+        for(int i=0;i<n;i++){
+            System.out.println(arr[i]+ "" );
+        }
     }
 }
 
