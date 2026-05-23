@@ -40,3 +40,23 @@ System.out.println(first + second);
 int age = 21;
 
 System.out.println("Age is " + age);
+
+//arrays
+
+int[] arr = {10,20,30,40};//stores values of same data type
+
+int[] arr = new int[4];//creates array of size 4
+
+System.out.print(arr[0]);//10
+
+Values:  10   20   30   40
+
+Index :   0    1    2    3
+
+int[] arr = {10,20,30};
+
+arr[1] = 100;
+
+System.out.println(arr[1]);//100
+
+arr.length
