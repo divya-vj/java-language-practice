@@ -1,62 +1,26 @@
-// syntax of strings
+String s="divya";
 
-String varName="value";
+for(int i=0;i<s.length;i++){
+    char c=s.charAt(i);
+    System.out.println(c);
+}
 
-String name="div";
+//string reversal
 
-System.out.println(name);
+import java.util.Scanner;
 
-System.out.println(name.length());
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a string:");
+        String s=sc.nextLine();
+        String reversed="";
 
-String text = "Hello World";
+        for (int i=s.length()-1;i>=0;i--){
+            reversed = reversed+s.charAt(i);
 
-System.out.println(text.length()); // space is also counted
+        }
+        System.out.println("reversed" + reversed)
+    }}
+}
 
-J  a  v  a
-0  1  2  3 // index starts from zero
-
-String word ="good";
-System.out.println(word.charAt(1));//0
-
-System.out.println(word.indexOf('g'));//0
-
-System.out.println(text.indexOf('z'));//-1
-
-String text = "JavaProgramming";
-
-System.out.println(text.substring(4));//programming
-
-System.out.println(text.substring(1,3));//av
-
-System.out.println(text.toLowerCase());
-
-System.out.println(text.toUpperCase());
-
-String first = "Hello";
-String second = "World";
-
-System.out.println(first + second);
-
-int age = 21;
-
-System.out.println("Age is " + age);
-
-//arrays
-
-int[] arr = {10,20,30,40};//stores values of same data type
-
-int[] arr = new int[4];//creates array of size 4
-
-System.out.print(arr[0]);//10
-
-Values:  10   20   30   40
-
-Index :   0    1    2    3
-
-int[] arr = {10,20,30};
-
-arr[1] = 100;
-
-System.out.println(arr[1]);//100
-
-arr.length
